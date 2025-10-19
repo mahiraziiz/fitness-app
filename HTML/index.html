@@ -1,0 +1,140 @@
+<!-- ...existing code... -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mahir Fitness</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Baloo+2:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS (correct relative path to CSS folder) -->
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <img src="weight.webp" alt="Aziz Fitness logo" class="brand-logo" />
+          <div class="brand-title">Aziz Fitness</div>
+        </div>
+
+        <nav class="nav">
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#calculator">Calculator</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-cta">
+          <a href="tel:+911234567890" class="btn btn-ghost">Call Us</a>
+          <a href="mailto:info@azizfitness.com" class="btn">Email</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-left">
+            <h1>Join the Best Gym in Delhi</h1>
+            <p>
+              Personal training, group classes and modern equipment. Get your
+              free trial today.
+            </p>
+            <a href="#signup" class="btn btn-primary">Get Started</a>
+          </div>
+
+          <aside
+            id="signup"
+            class="signup-card"
+            aria-labelledby="signup-heading"
+          >
+            <h2 id="signup-heading">Sign up for a free trial</h2>
+            <form action="noaction.php" method="post" class="signup-form">
+              <label>
+                <span class="visually-hidden">Full name</span>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full name"
+                  required
+                />
+              </label>
+
+              <label>
+                <span class="visually-hidden">Age</span>
+                <input
+                  type="number"
+                  name="age"
+                  placeholder="Age"
+                  min="10"
+                  max="100"
+                  required
+                />
+              </label>
+
+              <label>
+                <span class="visually-hidden">Gender</span>
+                <select name="gender" required>
+                  <option value="">Gender</option>
+                  <option>Female</option>
+                  <option>Male</option>
+                  <option>Prefer not to say</option>
+                </select>
+              </label>
+
+              <label>
+                <span class="visually-hidden">Locality</span>
+                <input type="text" name="locality" placeholder="Locality" />
+              </label>
+
+              <label>
+                <span class="visually-hidden">Email</span>
+                <input type="email" name="email" placeholder="Email" required />
+              </label>
+
+              <label>
+                <span class="visually-hidden">Contact</span>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Contact number"
+                  pattern="[0-9+() -]{7,}"
+                  required
+                />
+              </label>
+
+              <button type="submit" class="btn btn-primary full">Submit</button>
+            </form>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="info-section">
+        <div class="container">
+          <h3>Why choose Aziz Fitness?</h3>
+          <p>
+            Experienced trainers · Modern equipment · Flexible timings ·
+            Personalized plans
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container">
+        <small>&copy; 2025 Aziz Fitness — All rights reserved</small>
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- ...existing code... -->
